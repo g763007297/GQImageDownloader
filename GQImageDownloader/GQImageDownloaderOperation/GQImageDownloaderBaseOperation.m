@@ -197,7 +197,8 @@ static NSInteger GQHTTPRequestTaskCount = 0;
                                               code:NSURLErrorBadServerResponse
                                           userInfo:nil];
         }
-        if(self.operationCompletionBlock && self.state != NSURLSessionTaskStateCanceling){
+        
+        if(self.operationCompletionBlock && self.state != GQImageDownloaderStateFinished) {
             self.operationCompletionBlock(self,requestSuccess,requestSuccess?nil:serverError);
         }
         [self finish];

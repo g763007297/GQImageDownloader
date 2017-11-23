@@ -10,6 +10,8 @@
 
 @interface UIImage (GQImageDownloader)
 
+#ifdef GQ_WEBP
+
 /**
  WebP文件转换成UIImage
  
@@ -25,5 +27,7 @@
  return
  */
 + (UIImage *)gq_imageWithWebPImageName:(NSString *)imageName;
+
+#endif
 
 @end

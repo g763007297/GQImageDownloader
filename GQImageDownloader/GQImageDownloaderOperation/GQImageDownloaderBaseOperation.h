@@ -34,7 +34,7 @@ typedef NSUInteger GQImageDownloaderState;
 
 @property (nonatomic, strong) NSData                            *certificateData;
 
-@property (nonatomic, strong) NSURLSession                      *operationSession;
+@property (nonatomic, strong) NSURLSession                      *operationSession NS_AVAILABLE_IOS(8_0);
 
 @property (nonatomic, strong) NSMutableData                     *operationData;
 @property (nonatomic, assign) CFRunLoopRef                      operationRunLoop;

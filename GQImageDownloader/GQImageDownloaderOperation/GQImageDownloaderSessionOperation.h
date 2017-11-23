@@ -8,6 +8,7 @@
 
 #import "GQImageDownloaderBaseOperation.h"
 
+NS_CLASS_AVAILABLE(NSURLSESSION_AVAILABLE, 8_0)
 @interface GQImageDownloaderSessionOperation : GQImageDownloaderBaseOperation<NSURLSessionTaskDelegate,NSURLSessionDataDelegate>
 
 @property (nonatomic, strong) NSURLSessionDataTask  *operationSessionTask;

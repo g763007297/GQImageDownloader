@@ -67,7 +67,10 @@ GQOBJECT_SINGLETON_BOILERPLATE(GQImageDataDownloader, sharedDownloadManager)
     GQWeakify(self);
     Class operationClass;
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunguarded-availability"
         operationClass = [GQImageDownloaderSessionOperation class];
+#pragma clang diagnostic pop
     }else {
         operationClass = [GQImageDownloaderURLConnectionOperation class];
     }

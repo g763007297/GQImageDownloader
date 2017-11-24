@@ -18,7 +18,6 @@
 		B66A12371FC6B41E00564F5B /* GQImageDownloaderBaseURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B66A121C1FC6B41E00564F5B /* GQImageDownloaderBaseURLRequest.m */; };
 		B66A12381FC6B41E00564F5B /* GQImageDownloaderBaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B66A12221FC6B41E00564F5B /* GQImageDownloaderBaseOperation.m */; };
 		B66A12391FC6B41E00564F5B /* GQImageDownloaderURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B66A12231FC6B41E00564F5B /* GQImageDownloaderURLConnectionOperation.m */; };
-		B66A123A1FC6B41E00564F5B /* GQImageDownloaderOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B66A12241FC6B41E00564F5B /* GQImageDownloaderOperationManager.m */; };
 		B66A123B1FC6B41E00564F5B /* GQImageDownloaderSessionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B66A12251FC6B41E00564F5B /* GQImageDownloaderSessionOperation.m */; };
 		B66A123C1FC6B41E00564F5B /* GQImageGobalPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = B66A12291FC6B41E00564F5B /* GQImageGobalPaths.m */; };
 		B66A123D1FC6B41E00564F5B /* GQImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B66A122B1FC6B41E00564F5B /* GQImageCacheManager.m */; };
@@ -26,6 +25,7 @@
 		B66A123F1FC6B41E00564F5B /* NSData+GQImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = B66A12301FC6B41E00564F5B /* NSData+GQImageDownloader.m */; };
 		B66A12441FC6B4D900564F5B /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66A12431FC6B4D900564F5B /* WebP.framework */; };
 		B6731E021FC7B19D00740966 /* GQImageDownloaderSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6731E011FC7B19D00740966 /* GQImageDownloaderSessionManager.m */; };
+		B6EA52D51FC820C50023F619 /* GQImageDownloaderOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EA52D41FC820C50023F619 /* GQImageDownloaderOperationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,12 +66,10 @@
 		B66A121B1FC6B41E00564F5B /* GQImageDownloaderBaseURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQImageDownloaderBaseURLRequest.h; sourceTree = "<group>"; };
 		B66A121C1FC6B41E00564F5B /* GQImageDownloaderBaseURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQImageDownloaderBaseURLRequest.m; sourceTree = "<group>"; };
 		B66A121D1FC6B41E00564F5B /* GQImageDataDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQImageDataDownloader.h; sourceTree = "<group>"; };
-		B66A121F1FC6B41E00564F5B /* GQImageDownloaderOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQImageDownloaderOperationManager.h; sourceTree = "<group>"; };
 		B66A12201FC6B41E00564F5B /* GQImageDownloaderOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQImageDownloaderOperationDelegate.h; sourceTree = "<group>"; };
 		B66A12211FC6B41E00564F5B /* GQImageDownloaderSessionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQImageDownloaderSessionOperation.h; sourceTree = "<group>"; };
 		B66A12221FC6B41E00564F5B /* GQImageDownloaderBaseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQImageDownloaderBaseOperation.m; sourceTree = "<group>"; };
 		B66A12231FC6B41E00564F5B /* GQImageDownloaderURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQImageDownloaderURLConnectionOperation.m; sourceTree = "<group>"; };
-		B66A12241FC6B41E00564F5B /* GQImageDownloaderOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQImageDownloaderOperationManager.m; sourceTree = "<group>"; };
 		B66A12251FC6B41E00564F5B /* GQImageDownloaderSessionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQImageDownloaderSessionOperation.m; sourceTree = "<group>"; };
 		B66A12261FC6B41E00564F5B /* GQImageDownloaderURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQImageDownloaderURLConnectionOperation.h; sourceTree = "<group>"; };
 		B66A12271FC6B41E00564F5B /* GQImageDownloaderBaseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQImageDownloaderBaseOperation.h; sourceTree = "<group>"; };
@@ -88,6 +86,8 @@
 		B6731E001FC7B19D00740966 /* GQImageDownloaderSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQImageDownloaderSessionManager.h; sourceTree = "<group>"; };
 		B6731E011FC7B19D00740966 /* GQImageDownloaderSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQImageDownloaderSessionManager.m; sourceTree = "<group>"; };
 		B6731E031FC7CAFE00740966 /* GQImageDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQImageDownloader.h; sourceTree = "<group>"; };
+		B6EA52D31FC820C50023F619 /* GQImageDownloaderOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQImageDownloaderOperationManager.h; sourceTree = "<group>"; };
+		B6EA52D41FC820C50023F619 /* GQImageDownloaderOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQImageDownloaderOperationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				B66A12191FC6B41E00564F5B /* GQImageDownloaderConst.h */,
+				B6EA52D31FC820C50023F619 /* GQImageDownloaderOperationManager.h */,
+				B6EA52D41FC820C50023F619 /* GQImageDownloaderOperationManager.m */,
 				B66A121D1FC6B41E00564F5B /* GQImageDataDownloader.h */,
 				B66A121A1FC6B41E00564F5B /* GQImageDataDownloader.m */,
 				B66A121B1FC6B41E00564F5B /* GQImageDownloaderBaseURLRequest.h */,
@@ -202,8 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				B66A12201FC6B41E00564F5B /* GQImageDownloaderOperationDelegate.h */,
-				B66A121F1FC6B41E00564F5B /* GQImageDownloaderOperationManager.h */,
-				B66A12241FC6B41E00564F5B /* GQImageDownloaderOperationManager.m */,
 				B66A12271FC6B41E00564F5B /* GQImageDownloaderBaseOperation.h */,
 				B66A12221FC6B41E00564F5B /* GQImageDownloaderBaseOperation.m */,
 				B6731E001FC7B19D00740966 /* GQImageDownloaderSessionManager.h */,
@@ -394,10 +394,10 @@
 				B66A12361FC6B41E00564F5B /* GQImageDataDownloader.m in Sources */,
 				B66A123C1FC6B41E00564F5B /* GQImageGobalPaths.m in Sources */,
 				B66A11F41FC6B41000564F5B /* main.m in Sources */,
+				B6EA52D51FC820C50023F619 /* GQImageDownloaderOperationManager.m in Sources */,
 				B66A123F1FC6B41E00564F5B /* NSData+GQImageDownloader.m in Sources */,
 				B66A12381FC6B41E00564F5B /* GQImageDownloaderBaseOperation.m in Sources */,
 				B66A11E61FC6B41000564F5B /* AppDelegate.m in Sources */,
-				B66A123A1FC6B41E00564F5B /* GQImageDownloaderOperationManager.m in Sources */,
 				B66A12351FC6B41E00564F5B /* UIImageView+GQImageDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -140,6 +140,13 @@ GQOBJECT_SINGLETON_BOILERPLATE(GQImageCacheManager, sharedManager)
     return [self isImageInMemoryCache:[self getKeyFromUrl:url]];
 }
 
+- (BOOL)isImageExistDiskWithUrl:(NSString *)url
+{
+    BOOL exists = NO;
+    exists = [_fileManager fileExistsAtPath:[self getKeyFromUrl:url]];
+    return exists;
+}
+
 - (BOOL)isImageInMemoryCache:(NSString*)key
 {
     return (nil != [self getImageFromMemoryCache:key]);

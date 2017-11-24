@@ -10,6 +10,12 @@
 #import <UIKit/UIKit.h>
 #import "GQImageDownloaderConst.h"
 
+typedef enum : NSUInteger {
+    GQImageDownloaderCacheTypeNone,
+    GQImageDownloaderCacheTypeOnlyMemory,
+    GQImageDownloaderCacheTypeDisk
+} GQImageDownloaderCacheType;
+
 @interface GQImageCacheManager : NSObject
 
 + (GQImageCacheManager *)sharedManager;
@@ -50,6 +56,14 @@
  *  return YES or NO
  */
 - (BOOL)isImageInMemoryCacheWithUrl:(NSString*)url;
+
+/**
+ 图片是否缓存在硬盘中
+
+ param url
+ return
+ */
+- (BOOL)isImageExistDiskWithUrl:(NSString *)url;
 
 /**
  *  清除内存中的缓存

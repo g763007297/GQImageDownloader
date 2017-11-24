@@ -33,6 +33,6 @@
          progress:(GQImageDownloaderProgressBlock)progress
          complete:(GQImageDownloaderCompleteBlock)complete;
 
-- (void)cancelCurrentImageRequest;     //caller must call this method in its dealloc method
+- (void)cancelCurrentImageRequest;
 
 @end

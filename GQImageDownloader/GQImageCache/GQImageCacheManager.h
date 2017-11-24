@@ -19,7 +19,7 @@
  *
  *  param url 请求的url或key
  *
- *  @return 文件位置
+ *  return 文件位置
  */
 - (NSString *)createImageFilePathWithUrl:(NSString *)url;
 
@@ -37,7 +37,7 @@
  *
  *  param url 请求的url或key
  *
- *  @return image
+ *  return image
  */
 - (UIImage *)getImageFromCacheWithUrl:(NSString*)url;
 - (UIImage *)getImageFromCacheWithKey:(NSString*)key;
@@ -47,15 +47,14 @@
  *
  *  param url 请求的url或key
  *
- *  @return YES or NO
+ *  return YES or NO
  */
 - (BOOL)isImageInMemoryCacheWithUrl:(NSString*)url;
 
 /**
- *  清除内存硬盘中的缓存
+ *  清除内存中的缓存
  */
 - (void)clearMemoryCache;
-- (void)clearDiskCache;
 
 /**
  *  删除指定的image缓存
@@ -65,23 +64,22 @@
 - (void)removeImageFromCacheWithUrl:(NSString *)url;
 - (void)removeImageFromCacheWithKey:(NSString *)key;
 
-
 /**
  获取文件缓存总大小
 
- @return 文件大小
+ return 文件大小
  */
 - (NSUInteger)getSize;
 
 /**
  获取文件总数
 
- @return 文件数
+ return 文件数
  */
 - (NSUInteger)getDiskCount;
 
 /**
- 删除disk缓存
+ 删除disk所有资源文件
  */
 - (void)clearDisk;
 - (void)clearDiskOnCompletion:(GQImageDownloaderNoParamsBlock)completion;

@@ -87,6 +87,7 @@
 		B66A12431FC6B4D900564F5B /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		B6731E001FC7B19D00740966 /* GQImageDownloaderSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQImageDownloaderSessionManager.h; sourceTree = "<group>"; };
 		B6731E011FC7B19D00740966 /* GQImageDownloaderSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQImageDownloaderSessionManager.m; sourceTree = "<group>"; };
+		B6731E031FC7CAFE00740966 /* GQImageDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQImageDownloader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +173,7 @@
 		B66A12161FC6B41E00564F5B /* GQImageDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				B6731E031FC7CAFE00740966 /* GQImageDownloader.h */,
 				B66A122D1FC6B41E00564F5B /* UIImageView+GQImageDownloader.h */,
 				B66A12171FC6B41E00564F5B /* UIImageView+GQImageDownloader.m */,
 				B66A12181FC6B41E00564F5B /* GQImageRequestConfigure */,
@@ -217,10 +219,10 @@
 		B66A12281FC6B41E00564F5B /* GQImageCache */ = {
 			isa = PBXGroup;
 			children = (
+				B66A122C1FC6B41E00564F5B /* GQImageGobalPaths.h */,
 				B66A12291FC6B41E00564F5B /* GQImageGobalPaths.m */,
 				B66A122A1FC6B41E00564F5B /* GQImageCacheManager.h */,
 				B66A122B1FC6B41E00564F5B /* GQImageCacheManager.m */,
-				B66A122C1FC6B41E00564F5B /* GQImageGobalPaths.h */,
 			);
 			path = GQImageCache;
 			sourceTree = "<group>";
@@ -228,10 +230,10 @@
 		B66A122E1FC6B41E00564F5B /* GQCategory */ = {
 			isa = PBXGroup;
 			children = (
-				B66A122F1FC6B41E00564F5B /* UIImage+GQImageDownloader.m */,
-				B66A12301FC6B41E00564F5B /* NSData+GQImageDownloader.m */,
-				B66A12311FC6B41E00564F5B /* NSData+GQImageDownloader.h */,
 				B66A12321FC6B41E00564F5B /* UIImage+GQImageDownloader.h */,
+				B66A122F1FC6B41E00564F5B /* UIImage+GQImageDownloader.m */,
+				B66A12311FC6B41E00564F5B /* NSData+GQImageDownloader.h */,
+				B66A12301FC6B41E00564F5B /* NSData+GQImageDownloader.m */,
 			);
 			path = GQCategory;
 			sourceTree = "<group>";

@@ -19,6 +19,8 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'Core'
 
+  s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
+
   s.subspec 'Core' do |core|
     core.source_files = "GQImageDownloader/**/*.{h,m}"
   end

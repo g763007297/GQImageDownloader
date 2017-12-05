@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GQImageDownloader"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "图片下载工具"
 
   s.homepage     = "https://github.com/g763007297/GQImageDownloader"

@@ -25,4 +25,6 @@
                                              progress:(GQImageDownloaderProgressBlock)progressBlock
                                              complete:(GQImageDownloaderCompleteBlock)completeBlock;
 
+- (void)cancelAllRequest;
+    
 @end

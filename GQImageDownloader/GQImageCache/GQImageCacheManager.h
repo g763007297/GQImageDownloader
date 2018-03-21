@@ -11,9 +11,9 @@
 #import "GQImageDownloaderConst.h"
 
 typedef enum : NSUInteger {
-    GQImageDownloaderCacheTypeNone,
-    GQImageDownloaderCacheTypeOnlyMemory,
-    GQImageDownloaderCacheTypeDisk
+    GQImageDownloaderCacheTypeNone,//无缓存
+    GQImageDownloaderCacheTypeOnlyMemory,//仅缓存在内存中
+    GQImageDownloaderCacheTypeDisk//缓存至硬盘中
 } GQImageDownloaderCacheType;
 
 @interface GQImageCacheManager : NSObject

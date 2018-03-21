@@ -79,4 +79,8 @@ GQOBJECT_SINGLETON_BOILERPLATE(GQImageDownloaderOperationManager, sharedManager)
     }
 }
 
+- (void)cancelAllRequest {
+    [[GQImageDataDownloader sharedDownloadManager] cancelAllOpration];
+}
+    
 @end

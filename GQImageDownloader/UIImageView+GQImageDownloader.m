@@ -28,6 +28,8 @@ GQ_DYNAMIC_PROPERTY_OBJECT(downloadOperation, setDownloadOperation, OBJC_ASSOCIA
     [self setDownloadOperation:nil];
 }
 
+
+    
 - (void)loadImage:(NSURL*)url
          progress:(GQImageDownloaderProgressBlock)progress
          complete:(GQImageDownloaderCompleteBlock)complete
@@ -99,4 +101,8 @@ GQ_DYNAMIC_PROPERTY_OBJECT(downloadOperation, setDownloadOperation, OBJC_ASSOCIA
     [self setDownloadOperation:_downloadOperation];
 }
 
+- (void)cancelAllImageRequest {
+    [[GQImageDownloaderOperationManager sharedManager] cancelAllRequest];
+}
+    
 @end

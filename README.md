@@ -161,7 +161,11 @@ Cookie
 
 (7) 1.0.6
     
-    wait a moment
+	消除xcode警告并解决可能造成循环引用的block问题
+	
+(8) 1.0.7
+	
+	wait a moment
 
 
 ## Support
